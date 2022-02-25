@@ -16,3 +16,10 @@ export const FlexColumn = styled('div')`
   align-items: ${(props) => props.alignItems};
   justify-content: ${(props) => props.justifyContent};
 `;
+
+export const PageContainer = styled('div')`
+  width: 100%;
+  max-width: 1620px;
+  height: 100%;
+  margin: 0 auto;
+`

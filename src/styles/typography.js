@@ -11,11 +11,18 @@ export const BodyText = styled('span')`
   margin: 5px 0;
   font-weight: ${(props) =>
     props.bold ? props.theme.fontWeights.bold : 'inherit'};
+`;
+
+export const Label = styled('span')`
+  font-size: ${(props) => props.theme.fontSizes.label};
+  margin: 5px 0;
+  font-weight: ${(props) =>
+    props.bold ? props.theme.fontWeights.bold : 'inherit'};
   ${(props) =>
     props.variant === 'error' &&
     `
-      color: ${props.theme.color.error};
-    `}
+    color: ${props.theme.color.error};
+  `}
 `;
 
 export const NavLink = styled(RouterNavLink)`

@@ -3,7 +3,7 @@ import { createStore } from 'solid-js/store';
 import { useStore } from '../../store';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
-import { BodyText, Header, NavLink } from '../../styles/typography';
+import { Label, Header, NavLink } from '../../styles/typography';
 import { FlexColumn } from '../../styles/layout';
 import { Container, Form } from './styles';
 
@@ -59,7 +59,7 @@ export default (props) => {
             type="password"
           />
           {state.errorMessage && (
-            <BodyText variant="error">{state.errorMessage}</BodyText>
+            <Label variant="error">{state.errorMessage}</Label>
           )}
         </FlexColumn>
         <FlexColumn>
